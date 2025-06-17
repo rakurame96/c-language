@@ -1,0 +1,1 @@
+BMP - Bit Mapped Image File
