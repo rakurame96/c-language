@@ -44,3 +44,13 @@
         - `00000000: 0000006f  o...`
             - infinite loop
             - jump instruction
+        
+    - Breakdown of xxd options:
+        - `-e`
+            Little-endian output: This tells xxd to reverse the byte order within each group (endianness), showing data in little-endian format.
+
+        - `-c 4`
+            Columns (bytes) per line = 4: Only 4 bytes will be displayed per line.
+
+        - `-g 4`
+            Group size = 4 bytes: Groups bytes in 4-byte chunks (i.e., 32-bit words). Since you're also using -e, these will be shown as little-endian 32-bit words.
